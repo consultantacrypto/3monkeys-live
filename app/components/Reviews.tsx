@@ -25,7 +25,7 @@ export default function Reviews() {
 
   return (
     <section className="py-24 px-6 bg-stone-50 relative overflow-hidden">
-      {/* Element decorativ de fundal (cerc subtil) */}
+      {/* Element decorativ de fundal */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-amber-200/20 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
 
       <div className="max-w-6xl mx-auto">
@@ -76,10 +76,10 @@ export default function Reviews() {
           ))}
         </div>
 
-        {/* Buton catre Google */}
+        {/* Buton catre Google - LINK-UL TAU REAL */}
         <div className="text-center mt-12">
           <a
-            href="https://www.google.com/maps/place/YOUR_GOOGLE_MAPS_LINK" // <--- PUNE LINKUL DE GOOGLE AICI
+            href="https://www.google.com/search?hl=en-RO&gl=ro&q=41,+3+Monkey+Massage,+30+Soi+Aonui,+Wichit,+Mueang+Phuket+District,+Phuket+83000,+Thailand&ludocid=16965121249051349234&lsig=AB86z5VIiTLm8Pl7NLpbiyflmN_V&hl=en&gl=RO#lrd=0x30502d17186e4615:0xeb7037e4152310f2,1"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-stone-800 font-bold border-b border-stone-800 pb-1 hover:text-amber-600 hover:border-amber-600 transition-colors"

@@ -17,7 +17,7 @@ export default function Hero() {
       {/* 1. IMAGINEA DE FUNDAL */}
       <div className="absolute inset-0">
         <Image
-          src="/hero-bg.jpg" // Asigura-te ca poza e in folderul public
+          src="/hero-bg.jpg" // Asigura-te ca poza exista in folderul public
           alt="3 Monkeys Luxury Spa Phuket"
           fill
           className="object-cover opacity-90"
@@ -27,11 +27,16 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/10 to-stone-900/90" />
       </div>
 
-      {/* 2. BADGE-UL GOOGLE 4.9 (Dreapta Sus - Element de incredere) */}
+      {/* 2. BADGE-UL GOOGLE 4.9 - ACUM ESTE LINK ACTIV */}
       <div className="absolute top-28 right-6 md:top-32 md:right-12 z-20 animate-fade-in-up">
-        <div className="flex items-center gap-3 rounded-lg border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-md shadow-2xl transition-transform hover:scale-105 cursor-default">
+        <a 
+          href="https://www.google.com/search?hl=en-RO&gl=ro&q=41,+3+Monkey+Massage,+30+Soi+Aonui,+Wichit,+Mueang+Phuket+District,+Phuket+83000,+Thailand&ludocid=16965121249051349234&lsig=AB86z5VIiTLm8Pl7NLpbiyflmN_V&hl=en&gl=RO#lrd=0x30502d17186e4615:0xeb7037e4152310f2,1"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-3 rounded-lg border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-md shadow-2xl transition-transform hover:scale-105 cursor-pointer group"
+        >
            {/* Logo text Google */}
-           <span className="text-[10px] font-bold uppercase tracking-widest text-white opacity-80">Google</span>
+           <span className="text-[10px] font-bold uppercase tracking-widest text-white opacity-80 group-hover:text-white transition-colors">Google</span>
            
            {/* Separator vertical */}
            <div className="h-4 w-[1px] bg-white/30"></div>
@@ -41,7 +46,7 @@ export default function Hero() {
              <span className="text-amber-400 text-sm">★★★★★</span>
              <span className="font-bold text-white text-sm">4.9</span>
            </div>
-        </div>
+        </a>
       </div>
 
       {/* 3. CONTINUTUL CENTRAL */}
@@ -60,7 +65,7 @@ export default function Hero() {
           3 Monkeys
         </h1>
 
-        {/* Slogan Nou - Mai organic si precis */}
+        {/* Slogan Nou */}
         <p className="mb-10 max-w-lg text-lg text-stone-100 md:text-2xl font-light leading-relaxed opacity-90">
           The Art of Thai Healing. <br/>
           <span className="text-sm md:text-base opacity-80 mt-2 block font-sans tracking-wider">
